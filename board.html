@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="게시판 | 討論區">
+  <title>게시판 | 討論區</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="韓國歐巴" style="height: 80px;"></a></div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="purchase.html" class="nav-item" data-lang-key="nav_purchase">구매대행</a></li>
+          <li><a href="shipping.html" class="nav-item" data-lang-key="nav_shipping">배송대행</a></li>
+          <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
+          <li><a href="apply.html" class="nav-apply-btn" data-lang-key="nav_apply">신청하기</a></li>
+          <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
+          <li><a href="board.html" class="nav-item active" data-lang-key="nav_board">게시판</a></li>
+          <li><a href="tracking.html" class="nav-item" data-lang-key="nav_tracking">배송조회</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span data-lang-key="nav_board">게시판</span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="container">
+
+      <!-- Announcements -->
+      <div class="board-section fade-in">
+        <h3 data-lang-key="board_announcements">공지사항</h3>
+        <ul class="board-list">
+          <li class="board-item">
+            <span class="board-item-title">
+              <span class="badge badge-notice">공지</span>
+              2026년 설 연휴 배송 안내 / 2026年春節配送公告
+            </span>
+            <span class="board-item-date">2026.01.20</span>
+          </li>
+          <li class="board-item">
+            <span class="board-item-title">
+              <span class="badge badge-notice">공지</span>
+              서비스 수수료 안내 변경 / 服務費用調整公告
+            </span>
+            <span class="board-item-date">2026.01.10</span>
+          </li>
+          <li class="board-item">
+            <span class="board-item-title">
+              <span class="badge badge-new">NEW</span>
+              신규 회원 이벤트 / 新會員活動
+            </span>
+            <span class="board-item-date">2026.01.05</span>
+          </li>
+          <li class="board-item">
+            <span class="board-item-title">
+              이용약관 업데이트 안내 / 服務條款更新公告
+            </span>
+            <span class="board-item-date">2025.12.15</span>
+          </li>
+          <li class="board-item">
+            <span class="board-item-title">
+              배송 지연 관련 안내 / 配送延遲說明
+            </span>
+            <span class="board-item-date">2025.12.01</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- FAQ -->
+      <div class="board-section fade-in">
+        <h3 data-lang-key="board_faq">자주 묻는 질문</h3>
+        <div class="faq-item">
+          <button class="faq-question" data-lang-key="purchase_faq1_q">어떤 상품을 구매할 수 있나요?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-lang-key="purchase_faq1_a">한국 온라인 쇼핑몰에서 판매하는 대부분의 상품을 구매할 수 있습니다. 단, 위험물, 금지 품목은 제외됩니다.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-lang-key="purchase_faq2_q">배송은 얼마나 걸리나요?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-lang-key="purchase_faq2_a">한국 내 배송 1~2일, 한국→대만 국제배송 4~8일 정도 소요됩니다.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-lang-key="purchase_faq3_q">결제 방법은 어떻게 되나요?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-lang-key="purchase_faq3_a">은행 이체, LINE Pay 등 다양한 방법으로 결제 가능합니다.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-lang-key="shipping_faq1_q">한국 창고 주소는 어디인가요?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-lang-key="shipping_faq1_a">신청 후 한국 창고 주소를 LINE으로 안내해드립니다.</div>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" data-lang-key="trade_faq1_q">최소 주문 수량이 있나요?</button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner" data-lang-key="trade_faq1_a">제품에 따라 다르며, 자세한 사항은 상담을 통해 안내해드립니다.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
+          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
+          <a href="#" data-lang-key="footer_terms">이용약관</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-line">
+    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
+      💬<span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    </a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

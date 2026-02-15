@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="대만 고객을 위한 한국 상품 구매·배송 대행 서비스 | 為台灣客戶提供韓國商品購買·配送代購服務">
+  <meta property="og:title" content="한국 구매대행 서비스 | 韓國代購服務">
+  <meta property="og:description" content="빠르고 안전한 전문 한국 구매대행 | 快速、安全、專業的韓國代購服務">
+  <meta property="og:type" content="website">
+  <title>한국 구매대행 서비스 | 韓國代購服務</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header">
+    <div class="header-top">
+      <button class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo.png" alt="韓國歐巴" style="height: 80px;">
+        </a>
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="purchase.html" class="nav-item" data-lang-key="nav_purchase">구매대행</a></li>
+          <li><a href="shipping.html" class="nav-item" data-lang-key="nav_shipping">배송대행</a></li>
+          <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
+          <li><a href="apply.html" class="nav-apply-btn" data-lang-key="nav_apply">신청하기</a></li>
+          <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
+          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
+          <li><a href="tracking.html" class="nav-item" data-lang-key="nav_tracking">배송조회</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-lang-key="hero_title"><span class="line-1">【韓國現地代購・直送台灣】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span></h1>
+    </div>
+  </section>
+
+  <!-- ========== PROCESS SECTION ========== -->
+  <section class="section fade-in" id="process">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="process_title">구매대행 이용 절차</h2>
+      </div>
+      <div class="process-steps">
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="step-number">1</div>
+          <div class="step-icon">🛒</div>
+          <div class="process-step-text">
+            <h4 data-lang-key="step1_title">한국 상품 선택</h4>
+            <p data-lang-key="step1_desc">원하는 한국 상품의 URL이나 이름을 알려주세요</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="step-number">2</div>
+          <div class="step-icon">📝</div>
+          <div class="process-step-text">
+            <h4 data-lang-key="step2_title">신청서 작성</h4>
+            <p data-lang-key="step2_desc">이름, 전화번호, LINE ID, 상품 정보, 수량을 작성합니다</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="step-number">3</div>
+          <div class="step-icon">💳</div>
+          <div class="process-step-text">
+            <h4 data-lang-key="step3_title">상품 구매</h4>
+            <p data-lang-key="step3_desc">한국에서 상품을 구매합니다. 판매자 발송 후 1~2일 소요</p>
+          </div>
+        </div>
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="step-number">4</div>
+          <div class="step-icon">🔍</div>
+          <div class="process-step-text">
+            <h4 data-lang-key="step4_title">검수 및 견적</h4>
+            <p data-lang-key="step4_desc">품질 검수 후 정확한 배송비와 서비스 비용을 안내합니다</p>
+          </div>
+        </div>
+        <!-- Step 5 -->
+        <div class="process-step">
+          <div class="step-number">5</div>
+          <div class="step-icon">✈️</div>
+          <div class="process-step-text">
+            <h4 data-lang-key="step5_title">대만으로 배송</h4>
+            <p data-lang-key="step5_desc">EMS 또는 항공편으로 배송. 보통 4~8일 소요</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CALCULATOR SECTION ========== -->
+  <section class="section-alt fade-in" id="calculator">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="calc_title">운임 계산기</h2>
+      </div>
+      <div class="calculator-box">
+        <!-- Product Price -->
+        <div class="calc-row">
+          <label data-lang-key="calc_price_label">상품 가격 (KRW)</label>
+          <div class="calc-input-group">
+            <span class="calc-prefix">₩</span>
+            <input type="number" id="calcPrice" placeholder="50000" min="0">
+          </div>
+        </div>
+        <!-- Quantity -->
+        <div class="calc-row">
+          <label data-lang-key="calc_quantity_label">수량</label>
+          <div class="calc-input-group">
+            <input type="number" id="calcQty" value="1" min="1" max="999">
+          </div>
+        </div>
+        <!-- Customs Rate -->
+        <div class="calc-row">
+          <label data-lang-key="calc_customs_label">관세율</label>
+          <div class="calc-input-group">
+            <select id="calcCustoms">
+              <option value="0">0%</option>
+              <option value="0.05">5%</option>
+              <option value="0.08">8%</option>
+              <option value="0.10">10%</option>
+              <option value="0.13">13%</option>
+            </select>
+          </div>
+        </div>
+        <!-- CBM (optional) -->
+        <div class="calc-row">
+          <label data-lang-key="calc_cbm_label">CBM 체적</label>
+          <div class="calc-input-group">
+            <input type="number" id="calcCBM" placeholder="0.00" min="0" step="0.01">
+          </div>
+          <span class="calc-help" data-lang-key="calc_cbm_help">체적이 큰 상품의 경우 입력해주세요 (선택사항)</span>
+        </div>
+        <!-- Calculate Button -->
+        <button class="calc-btn" id="calcBtn" data-lang-key="calc_btn">총 비용 계산하기</button>
+
+        <!-- Results -->
+        <div class="calc-result" id="calcResult">
+          <div class="result-row">
+            <span data-lang-key="calc_result_product">상품 가격</span>
+            <span id="resultProduct">NT$ 0</span>
+          </div>
+          <div class="result-row">
+            <span data-lang-key="calc_result_shipping">배송비 (예상)</span>
+            <span id="resultShipping">NT$ 0</span>
+          </div>
+          <div class="result-row">
+            <span data-lang-key="calc_result_customs">관세</span>
+            <span id="resultCustoms">NT$ 0</span>
+          </div>
+          <div class="result-row">
+            <span data-lang-key="calc_result_service">서비스 수수료</span>
+            <span id="resultService">NT$ 0</span>
+          </div>
+          <div class="result-total">
+            <span data-lang-key="calc_result_total">총 예상 비용</span>
+            <span id="resultTotal">NT$ 0</span>
+          </div>
+        </div>
+        <p class="calc-note" data-lang-key="calc_note">※ 이 금액은 예상 금액이며, 실제 비용은 다를 수 있습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY CHOOSE US ========== -->
+  <section class="section fade-in" id="advantages">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="advantages_title">우리를 선택하는 이유</h2>
+      </div>
+      <div class="advantages-content">
+        <div class="advantages-image">
+          <img src="images/advantage-image.jpg" alt="韓國代購服務優勢">
+        </div>
+        <div class="advantages-list">
+          <div class="advantage-item">
+            <div class="advantage-icon">🏢</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv1_title">韓國現地法人運營</h4>
+              <p data-lang-key="adv1_desc">非個人代購，韓國當地公司直營，更有保障</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">💰</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv2_title">透明報價・無隱藏費用</h4>
+              <p data-lang-key="adv2_desc">商品價格＋國際運費＋服務費，一目了然</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">📦</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv3_title">多元服務一站搞定</h4>
+              <p data-lang-key="adv3_desc">代購、集運、現地提貨、批發，各種需求全面對應</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">💬</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv4_title">LINE即時客服</h4>
+              <p data-lang-key="adv4_desc">中文客服即時回覆，溝通無障礙</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🔍</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv5_title">到貨前拍照確認</h4>
+              <p data-lang-key="adv5_desc">所有商品在韓國倉庫檢驗拍照，確認後再出貨</p>
+            </div>
+          </div>
+          <div class="advantage-item">
+            <div class="advantage-icon">🤝</div>
+            <div class="advantage-text">
+              <h4 data-lang-key="adv6_title">長期合作支援</h4>
+              <p data-lang-key="adv6_desc">個人及企業客戶皆可長期配合，量大另有優惠</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BUSINESS AREA ========== -->
+  <section class="section-alt fade-in" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="business_title">사업영역</h2>
+      </div>
+      <div class="business-cards">
+        <div class="business-card">
+          <div class="business-card-icon">
+            <img src="images/icon-purchase.png" alt="商品代購">
+          </div>
+          <h3 data-lang-key="biz1_title">商品代購</h3>
+          <p data-lang-key="biz1_desc">韓國網站商品代為購買，包括化妝品、服飾、食品等</p>
+          <a href="purchase.html" class="card-btn" data-lang-key="card_more">자세히 보기</a>
+        </div>
+        <div class="business-card">
+          <div class="business-card-icon">
+            <img src="images/icon-shipping.png" alt="集運服務">
+          </div>
+          <h3 data-lang-key="biz2_title">集運服務</h3>
+          <p data-lang-key="biz2_desc">韓國倉庫收貨後安排國際配送至台灣</p>
+          <a href="shipping.html" class="card-btn" data-lang-key="card_more">자세히 보기</a>
+        </div>
+        <div class="business-card">
+          <div class="business-card-icon">
+            <img src="images/icon-pickup.png" alt="現地提貨">
+          </div>
+          <h3 data-lang-key="biz3_title">現地提貨</h3>
+          <p data-lang-key="biz3_desc">韓國當地市場、實體店面提貨服務</p>
+          <a href="pickup.html" class="card-btn" data-lang-key="card_more">자세히 보기</a>
+        </div>
+        <div class="business-card">
+          <div class="business-card-icon">
+            <img src="images/icon-trade.png" alt="批發專區">
+          </div>
+          <h3 data-lang-key="biz4_title">批發專區</h3>
+          <p data-lang-key="biz4_desc">東大門批發、大量採購專業支援</p>
+          <a href="trade.html" class="card-btn" data-lang-key="card_more">자세히 보기</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="section-alt fade-in" id="contact">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="contact_title">연락처</h2>
+      </div>
+      <div class="contact-grid">
+        <!-- Left: Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-item-icon">📍</div>
+            <div class="contact-item-text">
+              <strong data-lang-key="contact_address_label">대만 사무실 주소</strong>
+              <span data-lang-key="contact_address">대만 타이베이시 중산구 XX로 XX번지</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">📞</div>
+            <div class="contact-item-text">
+              <strong data-lang-key="contact_phone_label">전화번호</strong>
+              <span><span data-lang-key="contact_phone_tw">대만</span>: +886-2-XXXX-XXXX</span><br>
+              <span><span data-lang-key="contact_phone_kr">한국</span>: +82-2-XXXX-XXXX</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">✉️</div>
+            <div class="contact-item-text">
+              <strong data-lang-key="contact_email_label">이메일</strong>
+              <span>info@korea-agency.com</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-item-icon">🕐</div>
+            <div class="contact-item-text">
+              <strong data-lang-key="contact_hours_label">영업시간</strong>
+              <span data-lang-key="contact_hours">월~금 9:30-18:30 (토 10:00-13:00)</span>
+            </div>
+          </div>
+        </div>
+        <!-- Right: LINE QR -->
+        <div class="contact-right">
+          <div class="line-qr-placeholder" data-lang-key="contact_line_qr">LINE QR코드</div>
+          <a href="#" class="contact-btn contact-btn-line" data-lang-key="contact_add_line">LINE 친구 추가</a>
+          <button class="contact-btn contact-btn-chat" data-open-modal="contact" data-lang-key="contact_chat">1:1 온라인 상담</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== USEFUL LINKS ========== -->
+  <section class="section fade-in" id="useful-links">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="useful_links_title">相關網站連結</h2>
+      </div>
+      <div class="useful-links-scroll">
+        <div class="useful-links-grid">
+          <a href="https://web.customs.gov.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-customs.png" alt="台灣關稅總局"></div>
+            <span data-lang-key="link_customs">台灣關稅總局</span>
+          </a>
+          <a href="https://rate.bot.com.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-exchange.png" alt="匯率查詢"></div>
+            <span data-lang-key="link_exchange">匯率查詢</span>
+          </a>
+          <a href="https://portal.sw.nat.gov.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-tariff.png" alt="關稅稅率查詢"></div>
+            <span data-lang-key="link_tariff">關稅稅率查詢</span>
+          </a>
+          <a href="https://www.trade.gov.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-trade.png" alt="經濟部國際貿易署"></div>
+            <span data-lang-key="link_trade_bureau">經濟部國際貿易署</span>
+          </a>
+          <a href="https://www.bsmi.gov.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-bsmi.png" alt="標準檢驗局"></div>
+            <span data-lang-key="link_bsmi">標準檢驗局</span>
+          </a>
+          <a href="https://web.customs.gov.tw/" target="_blank" rel="noopener" class="useful-link-item">
+            <div class="useful-link-icon"><img src="images/link-customs-admin.png" alt="財政部關務署"></div>
+            <span data-lang-key="link_customs_admin">財政部關務署</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
+          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
+          <a href="#" data-lang-key="footer_terms">이용약관</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="YouTube">🎬</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== FLOATING LINE BUTTON ========== -->
+  <div class="floating-line">
+    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
+      💬
+      <span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    </a>
+  </div>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- ========== CONTACT MODAL ========== -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 data-lang-key="modal_title">연락처 정보</h3>
+      <div class="modal-info">
+        <div class="modal-info-item">
+          <span class="modal-info-icon">🏢</span>
+          <div>
+            <strong data-lang-key="modal_office">대만 사무실</strong><br>
+            +886-2-XXXX-XXXX
+          </div>
+        </div>
+        <div class="modal-info-item">
+          <span class="modal-info-icon">👤</span>
+          <div>
+            <strong data-lang-key="modal_manager">담당자</strong><br>
+            Manager Kim | LINE: @manager-kim
+          </div>
+        </div>
+        <div class="modal-info-item">
+          <span class="modal-info-icon">💬</span>
+          <div>
+            <strong>LINE ID</strong><br>
+            @korea-agency
+          </div>
+        </div>
+      </div>
+      <div class="modal-buttons">
+        <a href="https://line.me/R/" target="_blank" class="modal-btn modal-btn-line" data-lang-key="modal_line_chat">LINE 상담하기</a>
+        <a href="tel:+886-2-XXXX-XXXX" class="modal-btn modal-btn-call" data-lang-key="modal_call">전화 걸기</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/calculator.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>

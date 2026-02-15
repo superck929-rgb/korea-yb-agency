@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="구매대행 신청서 | 代購申請表">
+  <title>신청하기 | 立即申請</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="韓國歐巴" style="height: 80px;"></a></div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="purchase.html" class="nav-item" data-lang-key="nav_purchase">구매대행</a></li>
+          <li><a href="shipping.html" class="nav-item" data-lang-key="nav_shipping">배송대행</a></li>
+          <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
+          <li><a href="apply.html" class="nav-apply-btn active" data-lang-key="nav_apply">신청하기</a></li>
+          <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
+          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
+          <li><a href="tracking.html" class="nav-item" data-lang-key="nav_tracking">배송조회</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- FORM -->
+  <section class="section">
+    <div class="container">
+      <div class="form-container fade-in">
+        <form id="applyForm" novalidate>
+
+          <!-- Name -->
+          <div class="form-group">
+            <label data-lang-key="apply_name">이름 <span class="required">*</span></label>
+            <input type="text" name="name" class="form-input" required>
+            <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+          </div>
+
+          <!-- Phone & LINE ID -->
+          <div class="form-row">
+            <div class="form-group">
+              <label data-lang-key="apply_phone">전화번호 <span class="required">*</span></label>
+              <input type="tel" name="phone" class="form-input" placeholder="09XX-XXX-XXX" required>
+              <div class="form-error" data-lang-key="val_phone">올바른 전화번호를 입력하세요</div>
+            </div>
+            <div class="form-group">
+              <label data-lang-key="apply_line">LINE ID <span class="required">*</span></label>
+              <input type="text" name="lineId" class="form-input" required>
+              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label data-lang-key="apply_email">이메일 (선택)</label>
+            <input type="email" name="email" class="form-input">
+            <div class="form-error" data-lang-key="val_email">올바른 이메일 주소를 입력하세요</div>
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Product URL -->
+          <div class="form-group">
+            <label data-lang-key="apply_product_url">상품 링크</label>
+            <input type="url" name="productUrl" class="form-input" placeholder="https://...">
+          </div>
+
+          <!-- Product Images -->
+          <div class="form-group">
+            <label data-lang-key="apply_product_images">상품 사진 (선택)</label>
+            <input type="file" name="productImages" class="form-input" accept=".jpg,.jpeg,.png" multiple>
+            <span class="calc-help" data-lang-key="apply_product_images_help">상품 사진을 올려주시면 더 빠르게 찾을 수 있습니다</span>
+          </div>
+
+          <!-- Product Name & Quantity -->
+          <div class="form-row">
+            <div class="form-group">
+              <label data-lang-key="apply_product_name">상품명 <span class="required">*</span></label>
+              <input type="text" name="productName" class="form-input" required>
+              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+            </div>
+            <div class="form-group">
+              <label data-lang-key="apply_quantity">수량 <span class="required">*</span></label>
+              <input type="number" name="quantity" class="form-input" min="1" value="1" required>
+              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+            </div>
+          </div>
+
+          <!-- Estimated Price -->
+          <div class="form-group">
+            <label data-lang-key="apply_price">예상 가격 (KRW)</label>
+            <input type="number" name="price" class="form-input" placeholder="50000">
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Delivery Address -->
+          <h3 data-lang-key="apply_address">배송 주소 <span class="required">*</span></h3>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label data-lang-key="apply_city">도시</label>
+              <input type="text" name="addressCity" class="form-input" required>
+              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+            </div>
+            <div class="form-group">
+              <label data-lang-key="apply_district">구/지역</label>
+              <input type="text" name="addressDistrict" class="form-input">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label data-lang-key="apply_street">상세 주소 <span class="required">*</span></label>
+            <input type="text" name="addressStreet" class="form-input" required>
+            <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
+          </div>
+
+          <div class="form-group">
+            <label data-lang-key="apply_postal">우편번호</label>
+            <input type="text" name="postalCode" class="form-input" maxlength="6">
+          </div>
+
+          <div class="divider"></div>
+
+          <!-- Special Requests -->
+          <div class="form-group">
+            <label data-lang-key="apply_special">특별 요청사항 (선택)</label>
+            <textarea name="specialRequests" class="form-input" rows="4"></textarea>
+          </div>
+
+          <!-- Agreement -->
+          <div class="form-checkbox">
+            <input type="checkbox" name="agree" id="agreeCheck" required>
+            <label for="agreeCheck" data-lang-key="apply_agree">개인정보처리방침 및 이용약관에 동의합니다</label>
+          </div>
+
+          <!-- Submit -->
+          <button type="submit" class="form-submit" data-lang-key="apply_submit">신청하기</button>
+        </form>
+
+        <!-- Success Message -->
+        <div class="form-success" id="formSuccess">
+          <div class="form-success-icon">✅</div>
+          <h3 data-lang-key="apply_success_title">신청이 완료되었습니다!</h3>
+          <p data-lang-key="apply_success_msg">빠른 시간 내에 LINE으로 연락드리겠습니다.</p>
+          <a href="index.html" class="card-btn mt-20">Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
+          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
+          <a href="#" data-lang-key="footer_terms">이용약관</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-line">
+    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
+      💬<span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    </a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/form-validation.js"></script>
+</body>
+</html>

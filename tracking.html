@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="배송 조회 | 配送查詢">
+  <title>배송조회 | 配送查詢</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="韓國歐巴" style="height: 80px;"></a></div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="purchase.html" class="nav-item" data-lang-key="nav_purchase">구매대행</a></li>
+          <li><a href="shipping.html" class="nav-item" data-lang-key="nav_shipping">배송대행</a></li>
+          <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
+          <li><a href="apply.html" class="nav-apply-btn" data-lang-key="nav_apply">신청하기</a></li>
+          <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
+          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
+          <li><a href="tracking.html" class="nav-item active" data-lang-key="nav_tracking">배송조회</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span data-lang-key="nav_tracking">배송조회</span>
+    </div>
+  </div>
+
+  <!-- TRACKING -->
+  <section class="section">
+    <div class="container">
+      <div class="section-title">
+        <h2 data-lang-key="tracking_title">배송 조회</h2>
+        <p data-lang-key="tracking_subtitle">운송장 번호를 입력하여 배송 상태를 확인하세요</p>
+      </div>
+
+      <!-- Tracking Input -->
+      <div class="tracking-input-box">
+        <input type="text" id="trackingNumber" class="tracking-input-large" data-lang-placeholder="tracking_placeholder" placeholder="운송장 번호 입력">
+      </div>
+
+      <!-- International Carriers -->
+      <div class="carrier-group fade-in">
+        <h3 data-lang-key="tracking_intl">국제 배송</h3>
+        <div class="carrier-buttons">
+          <button class="carrier-btn" data-url="https://service.epost.go.kr/trace.RetrieveEmsRigiTraceList.comm">
+            <div class="carrier-btn-icon"><img src="images/carrier-korea-post.png" alt="Korea Post"></div>
+            <span data-lang-key="tracking_korea_post">한국우체국</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.ems.post/">
+            <div class="carrier-btn-icon"><img src="images/carrier-ems.png" alt="EMS"></div>
+            <span>EMS</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.dhl.com/tw-zh/home/tracking.html">
+            <div class="carrier-btn-icon"><img src="images/carrier-dhl.png" alt="DHL"></div>
+            <span>DHL</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.fedex.com/zh-tw/tracking.html">
+            <div class="carrier-btn-icon"><img src="images/carrier-fedex.png" alt="FedEx"></div>
+            <span>FedEx</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Taiwan Local Carriers -->
+      <div class="carrier-group fade-in">
+        <h3 data-lang-key="tracking_tw">대만 현지 택배</h3>
+        <div class="carrier-buttons">
+          <button class="carrier-btn" data-url="https://www.post.gov.tw/post/internet/Searchzone/index.jsp?ID=21019">
+            <div class="carrier-btn-icon"><img src="images/carrier-chunghwa.png" alt="中華郵政"></div>
+            <span data-lang-key="tracking_chunghwa">중화우정</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.t-cat.com.tw/Inquire/Trace.aspx">
+            <div class="carrier-btn-icon"><img src="images/carrier-blackcat.png" alt="黑貓宅急便"></div>
+            <span data-lang-key="tracking_blackcat">흑묘택급편</span>
+          </button>
+          <button class="carrier-btn" data-url="http://www.hct.com.tw/Search/search.aspx">
+            <div class="carrier-btn-icon"><img src="images/carrier-hsinchu.png" alt="新竹物流"></div>
+            <span data-lang-key="tracking_hsinchu">신주물류</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.kerrytj.com/zh-tw/online-tools/track-trace/">
+            <div class="carrier-btn-icon"><img src="images/carrier-kerry.png" alt="嘉里大榮"></div>
+            <span data-lang-key="tracking_kerry">가리대영</span>
+          </button>
+          <button class="carrier-btn" data-url="https://eservice.7-11.com.tw/e-tracking/search.aspx">
+            <div class="carrier-btn-icon"><img src="images/carrier-711.png" alt="7-ELEVEN"></div>
+            <span>7-ELEVEN</span>
+          </button>
+          <button class="carrier-btn" data-url="https://www.famiport.com.tw/Web_Famiport/page/process.aspx?file=search">
+            <div class="carrier-btn-icon"><img src="images/carrier-family.png" alt="全家"></div>
+            <span data-lang-key="tracking_family">전가편의점</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
+          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
+          <a href="#" data-lang-key="footer_terms">이용약관</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-line">
+    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
+      💬<span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    </a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    // Carrier tracking buttons
+    document.querySelectorAll('.carrier-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var url = this.getAttribute('data-url');
+        if (url) window.open(url, '_blank');
+      });
+    });
+  </script>
+</body>
+</html>

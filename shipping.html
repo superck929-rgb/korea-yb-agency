@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="한국 배송대행 서비스 | 韓國配送代購服務">
+  <title>배송대행 | 配送代購</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-top">
+      <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="韓國歐巴" style="height: 80px;"></a></div>
+      <div class="lang-toggle">
+        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+      </div>
+    </div>
+    <nav class="nav">
+      <div class="nav-container">
+        <ul class="nav-menu">
+          <li><a href="purchase.html" class="nav-item" data-lang-key="nav_purchase">구매대행</a></li>
+          <li><a href="shipping.html" class="nav-item active" data-lang-key="nav_shipping">배송대행</a></li>
+          <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
+          <li><a href="apply.html" class="nav-apply-btn" data-lang-key="nav_apply">신청하기</a></li>
+          <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
+          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
+          <li><a href="tracking.html" class="nav-item" data-lang-key="nav_tracking">배송조회</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO BANNER -->
+  <section class="page-hero page-hero-shipping">
+    <div class="container">
+      <h1 data-lang-key="shipping_hero_title">배송대행 서비스</h1>
+      <p data-lang-key="shipping_hero_sub">한국에서 대만까지 안전하고 빠른 배송</p>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">›</span>
+      <span data-lang-key="nav_shipping">배송대행</span>
+    </div>
+  </div>
+
+  <!-- CONTENT -->
+  <section class="page-content">
+    <div class="container">
+      <div class="fade-in">
+        <h2 data-lang-key="shipping_intro_title">서비스 소개</h2>
+        <p data-lang-key="shipping_intro_p1">한국에서 직접 구매하신 상품을 대만까지 안전하게 배송해드리는 서비스입니다. 한국 창고에 상품을 보내시면, 검수 후 대만으로 발송합니다.</p>
+        <p data-lang-key="shipping_intro_p2">EMS, 항공 화물 등 다양한 배송 옵션을 제공합니다.</p>
+      </div>
+
+      <div class="service-visual fade-in">
+        <img src="images/service-shipping-visual.jpg" alt="配送代購服務示意圖">
+        <p class="image-caption" data-lang-key="shipping_visual_caption">韓國至台灣配送流程</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="fade-in">
+        <h2 data-lang-key="shipping_features_title">서비스 특징</h2>
+        <ul class="feature-list">
+          <li data-lang-key="shipping_f1">한국 내 무료 수거 서비스 (서울 지역)</li>
+          <li data-lang-key="shipping_f2">상품 검수 및 재포장 서비스</li>
+          <li data-lang-key="shipping_f3">합포장으로 배송비 절약</li>
+          <li data-lang-key="shipping_f4">실시간 배송 추적 가능</li>
+          <li data-lang-key="shipping_f5">배송 보험 제공</li>
+        </ul>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Process -->
+      <div class="fade-in">
+        <h2 data-lang-key="purchase_process_title">이용 절차</h2>
+        <div class="numbered-steps">
+          <div class="numbered-step">
+            <h4 data-lang-key="step2_title">신청서 작성</h4>
+            <p data-lang-key="step2_desc">이름, 전화번호, LINE ID, 상품 정보, 수량을 작성합니다</p>
+          </div>
+          <div class="numbered-step">
+            <h4>한국 창고로 발송 / 寄到韓國倉庫</h4>
+            <p>구매하신 상품을 한국 창고 주소로 보내주세요</p>
+          </div>
+          <div class="numbered-step">
+            <h4 data-lang-key="step4_title">검수 및 견적</h4>
+            <p data-lang-key="step4_desc">품질 검수 후 정확한 배송비와 서비스 비용을 안내합니다</p>
+          </div>
+          <div class="numbered-step">
+            <h4 data-lang-key="step5_title">대만으로 배송</h4>
+            <p data-lang-key="step5_desc">EMS 또는 항공편으로 배송. 보통 4~8일 소요</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <!-- Pricing -->
+      <div class="fade-in">
+        <h2 data-lang-key="shipping_pricing_title">배송비 안내</h2>
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th data-lang-key="shipping_pricing_col1">무게 (kg)</th>
+              <th data-lang-key="shipping_pricing_col2">EMS 요금 (TWD)</th>
+              <th data-lang-key="shipping_pricing_col3">항공 화물 (TWD)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>0.5kg</td><td>NT$ 350</td><td>NT$ 280</td></tr>
+            <tr><td>1.0kg</td><td>NT$ 500</td><td>NT$ 400</td></tr>
+            <tr><td>2.0kg</td><td>NT$ 750</td><td>NT$ 600</td></tr>
+            <tr><td>3.0kg</td><td>NT$ 950</td><td>NT$ 780</td></tr>
+            <tr><td>5.0kg</td><td>NT$ 1,350</td><td>NT$ 1,100</td></tr>
+            <tr><td>10.0kg</td><td>NT$ 2,200</td><td>NT$ 1,800</td></tr>
+          </tbody>
+        </table>
+        <div class="notice-box notice-info">
+          <span class="notice-box-icon">ℹ️</span>
+          <span data-lang-key="calc_note">※ 이 금액은 예상 금액이며, 실제 비용은 다를 수 있습니다.</span>
+        </div>
+      </div>
+
+      <div class="text-center mt-40">
+        <button class="bottom-contact-btn" data-open-modal="contact" data-lang-key="bottom_contact">1:1 문의하기</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-left">
+          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
+          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
+        </div>
+        <div class="footer-links">
+          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
+          <a href="#" data-lang-key="footer_terms">이용약관</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-line">
+    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
+      💬<span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    </a>
+  </div>
+  <button class="scroll-top" aria-label="Scroll to top">↑</button>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal-overlay" id="contactModal">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">✕</button>
+      <h3 data-lang-key="modal_title">연락처 정보</h3>
+      <div class="modal-info">
+        <div class="modal-info-item"><span class="modal-info-icon">🏢</span><div><strong data-lang-key="modal_office">대만 사무실</strong><br>+886-2-XXXX-XXXX</div></div>
+        <div class="modal-info-item"><span class="modal-info-icon">👤</span><div><strong data-lang-key="modal_manager">담당자</strong><br>Manager Kim | LINE: @manager-kim</div></div>
+        <div class="modal-info-item"><span class="modal-info-icon">💬</span><div><strong>LINE ID</strong><br>@korea-agency</div></div>
+      </div>
+      <div class="modal-buttons">
+        <a href="https://line.me/R/" target="_blank" class="modal-btn modal-btn-line" data-lang-key="modal_line_chat">LINE 상담하기</a>
+        <a href="tel:+886-2-XXXX-XXXX" class="modal-btn modal-btn-call" data-lang-key="modal_call">전화 걸기</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/popup.js"></script>
+</body>
+</html>
