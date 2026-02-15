@@ -14,7 +14,7 @@ const LANG_DATA = {
   nav_tracking: { ko: '배송조회', zh: '配送查詢' },
 
   // ---- Hero ----
-  hero_title: { ko: '<span class="line-1">【韓國現地代購・直送台灣】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>', zh: '<span class="line-1">【韓國現地代購・直送台灣】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>' },
+  hero_title: { ko: '<span class="line-1">【韓國現地代購・直送台灣/港澳】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>', zh: '<span class="line-1">【韓國現地代購・直送台灣】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>' },
 
   // ---- Process Section ----
   process_title: { ko: '구매대행 이용 절차', zh: '購買代購流程' },
