@@ -200,7 +200,7 @@ p  { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 37px;
 }
 
 .nav-item {
@@ -237,7 +237,7 @@ p  { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
 /* ---- Apply Button (CTA) ---- */
 .nav-apply-btn {
   display: inline-block;
-  padding: 8px 24px;
+  padding: 8px 38px;
   font-size: 14px;
   font-weight: 700;
   color: #FFFFFF;
@@ -323,23 +323,26 @@ p  { font-size: 16px; line-height: 1.6; margin-bottom: 12px; }
 }
 
 .hero h1 {
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 800;
   margin-bottom: 20px;
+  line-height: 1.4;
   text-shadow: -1px -1px 0 rgba(50,50,50,0.6), 1px -1px 0 rgba(50,50,50,0.6), -1px 1px 0 rgba(50,50,50,0.6), 1px 1px 0 rgba(50,50,50,0.6), 0 3px 8px rgba(0,0,0,0.6), 0 6px 20px rgba(0,0,0,0.4), 0 10px 30px rgba(0,0,0,0.2);
 }
 
 .hero h1 .line-1 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 800;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  line-height: 1.3;
 }
 
 .hero h1 .line-2 {
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 600;
   display: block;
+  line-height: 1.4;
 }
 
 .hero p {
@@ -1799,20 +1802,21 @@ textarea.form-input {
 }
 
 .useful-link-icon {
-  width: 40px;
-  height: 40px;
-  background: #F8F9FA;
-  border-radius: 8px;
+  width: 56px;
+  height: 56px;
+  background: #FFF;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   flex-shrink: 0;
+  padding: 6px;
 }
 
 .useful-link-icon img {
-  width: 30px;
-  height: 30px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -1902,56 +1906,88 @@ textarea.form-input {
 
 .carrier-group h3 {
   font-size: 20px;
+  font-weight: 700;
   color: #2C3E50;
   margin-bottom: 20px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #E0E0E0;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #3498DB;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.carrier-group h3 .section-flag {
+  font-size: 22px;
+  line-height: 1;
 }
 
 .carrier-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
 .carrier-btn {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 10px;
-  padding: 25px 15px;
-  border: 2px solid #E0E0E0;
-  border-radius: 12px;
+  gap: 12px;
+  padding: 14px 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 10px;
   background: #FFF;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s ease;
+  text-decoration: none;
+  color: inherit;
 }
 
 .carrier-btn:hover {
   border-color: #3498DB;
-  box-shadow: 0 4px 15px rgba(52,152,219,0.2);
-  transform: translateY(-3px);
+  box-shadow: 0 3px 12px rgba(52,152,219,0.15);
+  transform: translateY(-2px);
+  background: #F8FBFF;
 }
 
-.carrier-btn-icon {
-  width: 60px;
-  height: 60px;
+.carrier-btn-logo {
+  width: 48px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  background: #F8F9FA;
+  border-radius: 6px;
+  padding: 4px;
+  overflow: hidden;
 }
 
-.carrier-btn-icon img {
-  width: 60px;
-  height: 60px;
+.carrier-btn-logo img {
+  max-width: 100%;
+  max-height: 100%;
   object-fit: contain;
 }
 
-.carrier-btn span {
-  font-size: 14px;
+.carrier-btn-name {
+  font-size: 15px;
   font-weight: 600;
   color: #333;
-  text-align: center;
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.carrier-btn-arrow {
+  color: #CCC;
+  font-size: 16px;
+  flex-shrink: 0;
+  transition: color 0.25s;
+}
+
+.carrier-btn:hover .carrier-btn-arrow {
+  color: #3498DB;
 }
 
 /* ========================================
@@ -2001,7 +2037,7 @@ textarea.form-input {
     grid-template-columns: 1fr;
   }
   .board-calc-image {
-    max-height: 250px;
+    max-height: 200px;
   }
 }
 

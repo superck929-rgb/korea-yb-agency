@@ -31,8 +31,8 @@
           <li><a href="pickup.html" class="nav-item" data-lang-key="nav_pickup">픽업대행</a></li>
           <li><a href="apply.html" class="nav-apply-btn" data-lang-key="nav_apply">신청하기</a></li>
           <li><a href="trade.html" class="nav-item" data-lang-key="nav_trade">무역대행</a></li>
-          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
           <li><a href="tracking.html" class="nav-item active" data-lang-key="nav_tracking">배송조회</a></li>
+          <li><a href="board.html" class="nav-item" data-lang-key="nav_board">게시판</a></li>
         </ul>
       </div>
     </nav>
@@ -69,57 +69,97 @@
         </div>
       </div>
 
-      <!-- International Carriers -->
+      <!-- ===== Taiwan Local Delivery ===== -->
       <div class="carrier-group fade-in">
-        <h3 data-lang-key="tracking_intl">국제 배송</h3>
+        <h3><span class="section-flag">🇹🇼</span> <span data-lang-key="tracking_tw">台灣本地配送</span></h3>
         <div class="carrier-buttons">
-          <button class="carrier-btn" data-url="https://service.epost.go.kr/trace.RetrieveEmsRigiTraceList.comm">
-            <div class="carrier-btn-icon"><img src="images/carrier-korea-post.png" alt="사진-[8-1] Korea Post"></div>
-            <span data-lang-key="tracking_korea_post">한국우체국</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.ems.post/">
-            <div class="carrier-btn-icon"><img src="images/carrier-ems.png" alt="사진-[8-2] EMS"></div>
-            <span>EMS</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.dhl.com/tw-zh/home/tracking.html">
-            <div class="carrier-btn-icon"><img src="images/carrier-dhl.png" alt="사진-[8-3] DHL"></div>
-            <span>DHL</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.fedex.com/zh-tw/tracking.html">
-            <div class="carrier-btn-icon"><img src="images/carrier-fedex.png" alt="사진-[8-4] FedEx"></div>
-            <span>FedEx</span>
-          </button>
+          <a href="https://www.post.gov.tw/post/internet/Searchzone/index.jsp?ID=21019" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-chunghwa.jpg" alt="中華郵政"></div>
+            <span class="carrier-btn-name">中華郵政</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.t-cat.com.tw/Inquire/Trace.aspx" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-blackcat.svg" alt="黑貓宅急便"></div>
+            <span class="carrier-btn-name">黑貓宅急便</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.hct.com.tw/Search/search.aspx" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-hsinchu.png" alt="新竹物流"></div>
+            <span class="carrier-btn-name">新竹物流</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.kerrytj.com/zh-tw/online-tools/track-trace/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-kerry.png" alt="嘉里大榮"></div>
+            <span class="carrier-btn-name">嘉里大榮</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://eservice.7-11.com.tw/e-tracking/search.aspx" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-711.png" alt="7-ELEVEN"></div>
+            <span class="carrier-btn-name">7-ELEVEN</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://ecservice.familymart.com.tw/Service/Trace" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-family.png" alt="全家便利商店"></div>
+            <span class="carrier-btn-name">全家便利商店</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.dhl.com/tw-zh/home/tracking.html" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-dhl.svg" alt="DHL"></div>
+            <span class="carrier-btn-name">DHL</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.fedex.com/zh-tw/tracking.html" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-fedex.png" alt="FedEx"></div>
+            <span class="carrier-btn-name">FedEx</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.ems.post/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-ems.png" alt="EMS"></div>
+            <span class="carrier-btn-name">EMS</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
         </div>
       </div>
 
-      <!-- Taiwan Local Carriers -->
+      <!-- ===== Korea Delivery ===== -->
       <div class="carrier-group fade-in">
-        <h3 data-lang-key="tracking_tw">대만 현지 택배</h3>
+        <h3><span class="section-flag">🇰🇷</span> <span data-lang-key="tracking_kr">韓國配送</span></h3>
         <div class="carrier-buttons">
-          <button class="carrier-btn" data-url="https://www.post.gov.tw/post/internet/Searchzone/index.jsp?ID=21019">
-            <div class="carrier-btn-icon"><img src="images/carrier-chunghwa.png" alt="사진-[8-5] 中華郵政"></div>
-            <span data-lang-key="tracking_chunghwa">중화우정</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.t-cat.com.tw/Inquire/Trace.aspx">
-            <div class="carrier-btn-icon"><img src="images/carrier-blackcat.png" alt="사진-[8-6] 黑貓宅急便"></div>
-            <span data-lang-key="tracking_blackcat">흑묘택급편</span>
-          </button>
-          <button class="carrier-btn" data-url="http://www.hct.com.tw/Search/search.aspx">
-            <div class="carrier-btn-icon"><img src="images/carrier-hsinchu.png" alt="사진-[8-7] 新竹物流"></div>
-            <span data-lang-key="tracking_hsinchu">신주물류</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.kerrytj.com/zh-tw/online-tools/track-trace/">
-            <div class="carrier-btn-icon"><img src="images/carrier-kerry.png" alt="사진-[8-8] 嘉里大榮"></div>
-            <span data-lang-key="tracking_kerry">가리대영</span>
-          </button>
-          <button class="carrier-btn" data-url="https://eservice.7-11.com.tw/e-tracking/search.aspx">
-            <div class="carrier-btn-icon"><img src="images/carrier-711.png" alt="사진-[8-9] 7-ELEVEN"></div>
-            <span>7-ELEVEN</span>
-          </button>
-          <button class="carrier-btn" data-url="https://www.famiport.com.tw/Web_Famiport/page/process.aspx?file=search">
-            <div class="carrier-btn-icon"><img src="images/carrier-family.png" alt="사진-[8-10] 全家"></div>
-            <span data-lang-key="tracking_family">전가편의점</span>
-          </button>
+          <a href="https://service.epost.go.kr/trace.RetrieveEmsRigiTraceList.comm" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-koreapost.gif" alt="韓國郵政"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_koreapost">韓國郵政</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.cjlogistics.com/ko/tool/parcel/tracking" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-cj.png" alt="CJ대한통운"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_cj">CJ大韓通運</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.lotteglogis.com/home/reservation/tracking/index" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-lotte.png" alt="롯데택배"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_lotte">樂天快遞</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.ilogen.com/web/personal/trace/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-logen.png" alt="로젠택배"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_logen">路仁快遞</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://kdexp.com/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-kdexp.png" alt="경동택배"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_kdexp">京東快遞</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.ilyanglogis.co.kr/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-ilyang.svg" alt="일양로직스"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_ilyang">一洋物流</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
+          <a href="https://www.chunil.co.kr/" target="_blank" rel="noopener" class="carrier-btn">
+            <div class="carrier-btn-logo"><img src="images/carrier-chunil.gif" alt="천일택배"></div>
+            <span class="carrier-btn-name" data-lang-key="carrier_chunil">千一快遞</span>
+            <span class="carrier-btn-arrow">›</span>
+          </a>
         </div>
       </div>
 
@@ -239,14 +279,5 @@
   <script src="js/language.js"></script>
   <script src="js/main.js"></script>
   <script src="js/calculator.js"></script>
-  <script>
-    // Carrier tracking buttons
-    document.querySelectorAll('.carrier-btn').forEach(function(btn) {
-      btn.addEventListener('click', function() {
-        var url = this.getAttribute('data-url');
-        if (url) window.open(url, '_blank');
-      });
-    });
-  </script>
 </body>
 </html>

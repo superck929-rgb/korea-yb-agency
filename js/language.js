@@ -277,7 +277,7 @@ const LANG_DATA = {
   link_tariff: { ko: '관세율 조회', zh: '關稅稅率查詢' },
   link_trade_bureau: { ko: '경제부 국제무역서', zh: '經濟部國際貿易署' },
   link_bsmi: { ko: '표준검사국', zh: '標準檢驗局' },
-  link_customs_admin: { ko: '재정부 관무서', zh: '財政部關務署' },
+  link_post: { ko: '중화우정', zh: '中華郵政' },
 
   // ---- Service Visual Captions ----
   purchase_visual_caption: { ko: '한국 상품 구매대행 절차', zh: '韓國商品代購流程示意' },
@@ -286,13 +286,22 @@ const LANG_DATA = {
   trade_visual_caption: { ko: 'B2B 무역대행 서비스', zh: 'B2B貿易代購服務' },
 
   // ---- Tracking Page ----
-  tracking_intl: { ko: '국제 배송', zh: '國際運送' },
-  tracking_tw: { ko: '대만 현지 택배', zh: '台灣本地配送' },
+  tracking_tw: { ko: '대만 현지 배송', zh: '台灣本地配送' },
+  tracking_kr: { ko: '한국 배송', zh: '韓國配送' },
   tracking_chunghwa: { ko: '중화우정', zh: '中華郵政' },
   tracking_blackcat: { ko: '흑묘택급편', zh: '黑貓宅急便' },
   tracking_hsinchu: { ko: '신주물류', zh: '新竹物流' },
   tracking_kerry: { ko: '가리대영', zh: '嘉里大榮' },
   tracking_family: { ko: '전가편의점', zh: '全家便利商店' },
+
+  // ---- Korean Carrier Names ----
+  carrier_koreapost: { ko: '한국우체국', zh: '韓國郵政' },
+  carrier_cj: { ko: 'CJ대한통운', zh: 'CJ大韓通運' },
+  carrier_lotte: { ko: '롯데택배', zh: '樂天快遞' },
+  carrier_logen: { ko: '로젠택배', zh: '路仁快遞' },
+  carrier_kdexp: { ko: '경동택배', zh: '京東快遞' },
+  carrier_ilyang: { ko: '일양로직스', zh: '一洋物流' },
+  carrier_chunil: { ko: '천일택배', zh: '千一快遞' },
 };
 
 // Initialize language

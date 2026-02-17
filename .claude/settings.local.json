@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:rate.bot.com.tw)",
+      "WebFetch(domain:portal.sw.nat.gov.tw)",
+      "WebFetch(domain:www.trade.gov.tw)",
+      "WebFetch(domain:www.bsmi.gov.tw)",
+      "WebFetch(domain:www.post.gov.tw)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:seeklogo.com)",
+      "WebFetch(domain:www.t-cat.com.tw)",
+      "WebFetch(domain:www.hct.com.tw)",
+      "WebFetch(domain:www.kerrytj.com)",
+      "WebFetch(domain:www.7-11.com.tw)",
+      "WebFetch(domain:www.family.com.tw)",
+      "WebFetch(domain:www.dhl.com)",
+      "WebFetch(domain:www.fedex.com)",
+      "WebFetch(domain:www.epost.go.kr)",
+      "WebFetch(domain:www.ems.post)",
+      "WebFetch(domain:www.cjlogistics.com)",
+      "WebFetch(domain:www.lotteglogis.com)",
+      "WebFetch(domain:www.ilogen.com)",
+      "WebFetch(domain:kdexp.com)",
+      "WebFetch(domain:www.ilyanglogis.com)",
+      "WebFetch(domain:www.chunil.co.kr)",
+      "WebFetch(domain:www.ilyanglogis.co.kr)",
+      "WebFetch(domain:sso.emsog.post)",
+      "WebFetch(domain:www.tjoin.com)",
+      "WebFetch(domain:brandfetch.com)",
+      "WebFetch(domain:1000logos.net)",
+      "WebFetch(domain:logosarchive.com)",
+      "WebFetch(domain:www.aftership.com)",
+      "WebFetch(domain:kerrytracingedi.kerrytj.com)",
+      "WebFetch(domain:adm.kerrytj.com)",
+      "WebFetch(domain:logos-world.net)",
+      "WebFetch(domain:commons.wikimedia.org)"
+    ]
+  }
+}
