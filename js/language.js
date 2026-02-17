@@ -245,7 +245,7 @@ const LANG_DATA = {
   tracking_korea_post: { ko: '한국우체국', zh: '韓國郵政' },
 
   // ---- Advantages Section ----
-  advantages_title: { ko: '우리를 선택하는 이유', zh: '為什麼選擇韓國YB오빠[OBBA]' },
+  advantages_title: { ko: '우리를 선택하는 이유', zh: '為什麼選擇韓國YB오빠:OBBA' },
   adv1_title: { ko: '한국과 대만에 현지 사무소 운영', zh: '韓國與台灣現地事務所運營' },
   adv1_desc: { ko: '한국과 대만 모두 현지 사무소를 운영하여 더욱 빠르고 안심할 수 있는 서비스', zh: '韓國及台灣皆設有現地事務所，提供更即時、更有保障的服務' },
   adv2_title: { ko: '투명한 견적・숨겨진 비용 없음', zh: '透明報價・無隱藏費用' },
