@@ -18,9 +18,9 @@
       <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       <div class="logo"><a href="index.html"><img src="images/logo.png" alt="韓國歐巴" style="height: 80px;"></a></div>
       <div class="lang-toggle">
-        <button class="lang-btn active" data-lang="ko">🇰🇷 한국어</button>
+        <button class="lang-btn active" data-lang="zh">🇹🇼 中文</button>
         <span class="lang-divider">|</span>
-        <button class="lang-btn" data-lang="zh">🇹🇼 中文</button>
+        <button class="lang-btn" data-lang="ko">🇰🇷 한국어</button>
       </div>
     </div>
     <nav class="nav">
@@ -38,128 +38,15 @@
     </nav>
   </header>
 
-  <!-- FORM -->
+  <!-- GOOGLE FORM -->
   <section class="section">
     <div class="container">
-      <div class="form-container fade-in">
-        <form id="applyForm" novalidate>
-
-          <!-- Name -->
-          <div class="form-group">
-            <label data-lang-key="apply_name">이름 <span class="required">*</span></label>
-            <input type="text" name="name" class="form-input" required>
-            <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-          </div>
-
-          <!-- Phone & LINE ID -->
-          <div class="form-row">
-            <div class="form-group">
-              <label data-lang-key="apply_phone">전화번호 <span class="required">*</span></label>
-              <input type="tel" name="phone" class="form-input" placeholder="09XX-XXX-XXX" required>
-              <div class="form-error" data-lang-key="val_phone">올바른 전화번호를 입력하세요</div>
-            </div>
-            <div class="form-group">
-              <label data-lang-key="apply_line">LINE ID <span class="required">*</span></label>
-              <input type="text" name="lineId" class="form-input" required>
-              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-            </div>
-          </div>
-
-          <!-- Email -->
-          <div class="form-group">
-            <label data-lang-key="apply_email">이메일 (선택)</label>
-            <input type="email" name="email" class="form-input">
-            <div class="form-error" data-lang-key="val_email">올바른 이메일 주소를 입력하세요</div>
-          </div>
-
-          <div class="divider"></div>
-
-          <!-- Product URL -->
-          <div class="form-group">
-            <label data-lang-key="apply_product_url">상품 링크</label>
-            <input type="url" name="productUrl" class="form-input" placeholder="https://...">
-          </div>
-
-          <!-- Product Images -->
-          <div class="form-group">
-            <label data-lang-key="apply_product_images">상품 사진 (선택)</label>
-            <input type="file" name="productImages" class="form-input" accept=".jpg,.jpeg,.png" multiple>
-            <span class="calc-help" data-lang-key="apply_product_images_help">상품 사진을 올려주시면 더 빠르게 찾을 수 있습니다</span>
-          </div>
-
-          <!-- Product Name & Quantity -->
-          <div class="form-row">
-            <div class="form-group">
-              <label data-lang-key="apply_product_name">상품명 <span class="required">*</span></label>
-              <input type="text" name="productName" class="form-input" required>
-              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-            </div>
-            <div class="form-group">
-              <label data-lang-key="apply_quantity">수량 <span class="required">*</span></label>
-              <input type="number" name="quantity" class="form-input" min="1" value="1" required>
-              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-            </div>
-          </div>
-
-          <!-- Estimated Price -->
-          <div class="form-group">
-            <label data-lang-key="apply_price">예상 가격 (KRW)</label>
-            <input type="number" name="price" class="form-input" placeholder="50000">
-          </div>
-
-          <div class="divider"></div>
-
-          <!-- Delivery Address -->
-          <h3 data-lang-key="apply_address">배송 주소 <span class="required">*</span></h3>
-
-          <div class="form-row">
-            <div class="form-group">
-              <label data-lang-key="apply_city">도시</label>
-              <input type="text" name="addressCity" class="form-input" required>
-              <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-            </div>
-            <div class="form-group">
-              <label data-lang-key="apply_district">구/지역</label>
-              <input type="text" name="addressDistrict" class="form-input">
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label data-lang-key="apply_street">상세 주소 <span class="required">*</span></label>
-            <input type="text" name="addressStreet" class="form-input" required>
-            <div class="form-error" data-lang-key="val_required">필수 입력 항목입니다</div>
-          </div>
-
-          <div class="form-group">
-            <label data-lang-key="apply_postal">우편번호</label>
-            <input type="text" name="postalCode" class="form-input" maxlength="6">
-          </div>
-
-          <div class="divider"></div>
-
-          <!-- Special Requests -->
-          <div class="form-group">
-            <label data-lang-key="apply_special">특별 요청사항 (선택)</label>
-            <textarea name="specialRequests" class="form-input" rows="4"></textarea>
-          </div>
-
-          <!-- Agreement -->
-          <div class="form-checkbox">
-            <input type="checkbox" name="agree" id="agreeCheck" required>
-            <label for="agreeCheck" data-lang-key="apply_agree">개인정보처리방침 및 이용약관에 동의합니다</label>
-          </div>
-
-          <!-- Submit -->
-          <button type="submit" class="form-submit" data-lang-key="apply_submit">신청하기</button>
-        </form>
-
-        <!-- Success Message -->
-        <div class="form-success" id="formSuccess">
-          <div class="form-success-icon">✅</div>
-          <h3 data-lang-key="apply_success_title">신청이 완료되었습니다!</h3>
-          <p data-lang-key="apply_success_msg">빠른 시간 내에 LINE으로 연락드리겠습니다.</p>
-          <a href="index.html" class="card-btn mt-20">Home</a>
-        </div>
+      <div class="fade-in" style="text-align: center;">
+        <iframe id="googleForm" src="https://docs.google.com/a/theselc.org/forms/d/e/1FAIpQLScepITkd8cxs6GofLa1dSWhq_0Cp0-uwYUrRr7QPi75dk6g7w/viewform?embedded=true"
+          width="100%" height="8000" frameborder="0" marginheight="0" marginwidth="0" scrolling="no"
+          style="max-width: 800px; border: none; border-radius: 12px; overflow: hidden;">
+          Loading...
+        </iframe>
       </div>
     </div>
   </section>
@@ -167,31 +54,44 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content">
-        <div class="footer-left">
-          <p><strong data-lang-key="footer_company">한국 구매대행 서비스</strong></p>
-          <p data-lang-key="footer_reg">사업자등록번호: XXX-XX-XXXXX</p>
-        </div>
-        <div class="footer-links">
-          <a href="#" data-lang-key="footer_privacy">개인정보처리방침</a>
-          <a href="#" data-lang-key="footer_terms">이용약관</a>
-        </div>
+      <div class="footer-icons">
+        <a href="#" class="fi-youtube" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.3 31.3 0 0 0 0 12a31.3 31.3 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8zM9.5 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg></a>
+        <a href="#" class="fi-facebook" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.3l-.5 3.5h-2.8v8.4A12 12 0 0 0 24 12z"/></svg></a>
+        <a href="#" class="fi-instagram" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.2 2.3.4.5.2.9.5 1.3.9.4.4.7.8.9 1.3.2.5.4 1.1.4 2.3.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.2 1.8-.4 2.3-.2.5-.5.9-.9 1.3-.4.4-.8.7-1.3.9-.5.2-1.1.4-2.3.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.2-2.3-.4a3.9 3.9 0 0 1-1.3-.9 3.9 3.9 0 0 1-.9-1.3c-.2-.5-.4-1.1-.4-2.3C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.9c.1-1.2.2-1.8.4-2.3.2-.5.5-.9.9-1.3.4-.4.8-.7 1.3-.9.5-.2 1.1-.4 2.3-.4C8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4 .6c-.8.3-1.5.7-2.2 1.4A6 6 0 0 0 .6 4C.3 4.8.1 5.7.1 7 0 8.3 0 8.7 0 12s0 3.7.1 5c0 1.3.2 2.2.5 3 .3.8.7 1.5 1.4 2.2.7.7 1.4 1.1 2.2 1.4.8.3 1.7.5 3 .5 1.3.1 1.7.1 5 .1s3.7 0 5-.1c1.3 0 2.2-.2 3-.5.8-.3 1.5-.7 2.2-1.4.7-.7 1.1-1.4 1.4-2.2.3-.8.5-1.7.5-3 .1-1.3.1-1.7.1-5s0-3.7-.1-5c0-1.3-.2-2.2-.5-3a6 6 0 0 0-1.4-2.2A6 6 0 0 0 20 .6c-.8-.3-1.7-.5-3-.5C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4A6.2 6.2 0 0 0 12 5.8zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+        <a href="https://line.me/R/" class="fi-line" aria-label="LINE"><svg viewBox="0 0 24 24"><path d="M24 10.3c0-5.1-5.1-9.3-11.4-9.3C6.3 1 1.2 5.1 1.2 10.3c0 4.6 4.1 8.5 9.6 9.2.4.1.9.2 1 .5.1.3.1.6 0 .9l-.2 1c0 .3-.2 1.2 1.1.7 1.2-.5 6.7-3.9 9.1-6.7 1.7-1.8 2.5-3.7 2.5-5.6zM8.5 13h-2a.5.5 0 0 1-.4-.4V8.4a.4.4 0 1 1 .8 0v3.8h1.6a.4.4 0 1 1 0 .8zm1.7-.4a.4.4 0 1 1-.8 0V8.4a.4.4 0 1 1 .8 0v4.2zm4.4 0a.4.4 0 0 1-.3.4.4.4 0 0 1-.4-.2l-2-2.7v2.5a.4.4 0 1 1-.8 0V8.4a.4.4 0 0 1 .3-.4.4.4 0 0 1 .4.2l2 2.7V8.4a.4.4 0 1 1 .8 0v4.2zm3.2-2.8a.4.4 0 1 1 0 .8h-1.6v1h1.6a.4.4 0 1 1 0 .8h-2a.5.5 0 0 1-.4-.4V8.4c0-.2.2-.4.4-.4h2a.4.4 0 1 1 0 .8h-1.6v1h1.6z"/></svg></a>
+        <a href="#" class="fi-x" aria-label="X"><svg viewBox="0 0 24 24"><path d="M18.2 2.25h3.5l-7.7 8.8L23 21.75h-7.1l-5.5-7.2-6.3 7.2H.6l8.2-9.4L.4 2.25h7.3l5 6.6 5.8-6.6zm-1.2 17.5h2L7.1 4.3H5l12 15.5z"/></svg></a>
+        <a href="#" class="fi-blog" aria-label="Blog"><svg viewBox="0 0 24 24"><path d="M4 4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2H4zm1 3h14v1H5V7zm0 3h14v1H5v-1zm0 3h10v1H5v-1z"/></svg></a>
+        <a href="mailto:superck929@gmail.com" class="fi-email" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg></a>
+        <a href="tel:010-3548-0461" class="fi-phone" aria-label="Phone"><svg viewBox="0 0 24 24"><path d="M6.6 10.8a15.3 15.3 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.3 1l-2.2 2.2z"/></svg></a>
+        <a href="#" class="fi-drive" aria-label="Google Drive"><svg viewBox="0 0 24 24"><path d="M7.7 1.5L1.5 12l3.1 5.4L10.8 7l-3.1-5.5zm1.5 0l6.2 10.5H24l-3.1-5.3H9.2zM8 14.5L4.9 20h12.3l3.1-5.5H8z"/></svg></a>
       </div>
-      <div class="footer-bottom">
-        <p data-lang-key="footer_copyright">© 2026 한국 구매대행 서비스. All rights reserved.</p>
+      <div class="footer-nav">
+        <a href="#">이용안내</a>
+        <span class="footer-nav-sep">|</span>
+        <a href="#">이용약관</a>
+        <span class="footer-nav-sep">|</span>
+        <a href="#">개인정보처리방침</a>
+        <span class="footer-nav-sep">|</span>
+        <a href="#">고객센터</a>
+      </div>
+      <div class="footer-company-info">
+        <p>회사명: 퀸즈코즈<span class="sep">|</span>회사주소: 서울 종로구 종로 63라길 19<span class="sep">|</span>전화번호: 010-3548-0461<span class="sep">|</span>이메일: superck929@gmail.com</p>
+        <p>사업자등록번호: 317-02-00000<span class="sep">|</span>통신판매신고번호: 제0000-서울종로00000호<span class="sep">|</span>개인정보 보호 책임자: 강삼촌</p>
       </div>
     </div>
   </footer>
 
   <div class="floating-line">
-    <a href="https://line.me/R/" target="_blank" class="floating-line-btn" aria-label="LINE">
-      💬<span class="floating-line-tooltip" data-lang-key="floating_tooltip">문의하기</span>
+    <a href="https://line.me/ti/p/~superck929" target="_blank" class="floating-line-btn" aria-label="LINE">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFF"><path d="M24 10.3c0-5.1-5.1-9.3-11.4-9.3C6.3 1 1.2 5.1 1.2 10.3c0 4.6 4.1 8.5 9.6 9.2.4.1.9.2 1 .5.1.3.1.6 0 .9l-.2 1c0 .3-.2 1.2 1.1.7 1.2-.5 6.7-3.9 9.1-6.7 1.7-1.8 2.5-3.7 2.5-5.6zM8.5 13h-2a.5.5 0 0 1-.4-.4V8.4a.4.4 0 1 1 .8 0v3.8h1.6a.4.4 0 1 1 0 .8zm1.7-.4a.4.4 0 1 1-.8 0V8.4a.4.4 0 1 1 .8 0v4.2zm4.4 0a.4.4 0 0 1-.3.4.4.4 0 0 1-.4-.2l-2-2.7v2.5a.4.4 0 1 1-.8 0V8.4a.4.4 0 0 1 .3-.4.4.4 0 0 1 .4.2l2 2.7V8.4a.4.4 0 1 1 .8 0v4.2zm3.2-2.8a.4.4 0 1 1 0 .8h-1.6v1h1.6a.4.4 0 1 1 0 .8h-2a.5.5 0 0 1-.4-.4V8.4c0-.2.2-.4.4-.4h2a.4.4 0 1 1 0 .8h-1.6v1h1.6z"/></svg><span class="floating-line-tooltip">LINE</span>
+    </a>
+    <a href="weixin://dl/chat?superck929" target="_blank" class="floating-wechat-btn" aria-label="WeChat">
+      <svg viewBox="0 0 24 24" width="28" height="28" fill="#FFF"><path d="M8.7 2C4.5 2 1 4.9 1 8.5c0 2 1.1 3.8 2.8 5l-.7 2.1 2.5-1.3c.8.2 1.6.4 2.4.4-.2-.5-.3-1.1-.3-1.7 0-3.3 3.2-6 7.1-6h.5C14.7 4.3 12 2 8.7 2zm-3 4.2a1 1 0 1 1 0-2 1 1 0 0 1 0 2zm4.6 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM23 13c0-3.1-3.1-5.6-6.8-5.6S9.4 9.9 9.4 13s3.1 5.6 6.8 5.6c.7 0 1.4-.1 2-.3l2.1 1.1-.6-1.8C21.8 16.5 23 14.9 23 13zm-9.1-1.2a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6zm4.6 0a.8.8 0 1 1 0-1.6.8.8 0 0 1 0 1.6z"/></svg><span class="floating-line-tooltip">WeChat</span>
     </a>
   </div>
   <button class="scroll-top" aria-label="Scroll to top">↑</button>
 
   <script src="js/language.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/form-validation.js"></script>
 </body>
 </html>

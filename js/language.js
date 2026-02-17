@@ -14,7 +14,7 @@ const LANG_DATA = {
   nav_tracking: { ko: '배송조회', zh: '配送查詢' },
 
   // ---- Hero ----
-  hero_title: { ko: '<span class="line-1">【韓國現地代購・直送台灣/港澳】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>', zh: '<span class="line-1">【韓國現地代購・直送台灣】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>' },
+  hero_title: { ko: '<span class="line-1">【韓國現地代購・直送台灣/港澳】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>', zh: '<span class="line-1">【韓國現地代購・直送台灣/港澳】</span><span class="line-2">專為台灣客戶打造的韓國商品一站式服務</span>' },
 
   // ---- Process Section ----
   process_title: { ko: '구매대행 이용 절차', zh: '購買代購流程' },
@@ -59,13 +59,13 @@ const LANG_DATA = {
   // ---- Contact Section ----
   contact_title: { ko: '연락처', zh: '聯絡我們' },
   contact_address_label: { ko: '대만 사무실 주소', zh: '台灣辦公室地址' },
-  contact_address: { ko: '대만 타이베이시 중산구 XX로 XX번지', zh: '台灣台北市中山區XX路XX號' },
+  contact_address: { ko: '대만 신베이시 린커우구', zh: '台灣新北市林口區' },
   contact_phone_label: { ko: '전화번호', zh: '電話號碼' },
   contact_phone_tw: { ko: '대만', zh: '台灣' },
   contact_phone_kr: { ko: '한국', zh: '韓國' },
   contact_email_label: { ko: '이메일', zh: '電子郵件' },
   contact_hours_label: { ko: '영업시간', zh: '營業時間' },
-  contact_hours: { ko: '월~금 9:30-18:30 (토 10:00-13:00)', zh: '週一至週五 9:30-18:30（週六 10:00-13:00）' },
+  contact_hours: { ko: '월~금 10:00-18:00', zh: '週一至週五 10:00-18:00' },
   contact_line_qr: { ko: 'LINE QR코드', zh: 'LINE QR碼' },
   contact_add_line: { ko: 'LINE 친구 추가', zh: '加LINE好友' },
   contact_chat: { ko: '1:1 온라인 상담', zh: '1:1線上諮詢' },
@@ -130,6 +130,19 @@ const LANG_DATA = {
   purchase_f3: { ko: '안전한 포장 및 빠른 배송', zh: '安全包裝及快速配送' },
   purchase_f4: { ko: '투명한 요금 체계', zh: '透明的費用體系' },
   purchase_f5: { ko: 'LINE 실시간 상담 가능', zh: 'LINE即時諮詢服務' },
+  purchase_steps_title: { ko: '이용 절차', zh: '使用流程' },
+  purchase_step01: { ko: '구매신청', zh: '提交申請' },
+  purchase_step02: { ko: '구매승인', zh: '審核通過' },
+  purchase_step03: { ko: '결제안내', zh: '付款通知' },
+  purchase_step04: { ko: '결제완료', zh: '完成付款' },
+  purchase_step05: { ko: '상품구매', zh: '商品購買' },
+  purchase_step06: { ko: '입고확인', zh: '到貨確認' },
+  purchase_step07: { ko: '상품검수', zh: '商品檢驗' },
+  purchase_step08: { ko: '사진전송', zh: '照片傳送' },
+  purchase_step09: { ko: '포장작업', zh: '包裝作業' },
+  purchase_step10: { ko: '배송비안내', zh: '運費通知' },
+  purchase_step11: { ko: '해외발송', zh: '海外寄送' },
+  purchase_step12: { ko: '배송완료', zh: '配送完成' },
   purchase_process_title: { ko: '이용 절차', zh: '使用流程' },
   purchase_pricing_title: { ko: '요금 안내', zh: '費用說明' },
   purchase_pricing_col1: { ko: '상품 가격 (KRW)', zh: '商品價格 (KRW)' },
@@ -179,6 +192,29 @@ const LANG_DATA = {
   pickup_faq1_q: { ko: '픽업 가능 지역은 어디인가요?', zh: '提貨服務範圍在哪裡？' },
   pickup_faq1_a: { ko: '서울, 경기 지역은 기본이며 다른 지역은 별도 문의 부탁드립니다.', zh: '首爾、京畿道為基本範圍，其他地區請另行諮詢。' },
 
+  // ---- Trade Process Steps ----
+  trade_step1_title: { ko: '상담 신청', zh: '諮詢申請' },
+  trade_step1_desc: { ko: '원하는 상품 및 거래 조건을 알려주세요', zh: '請告知您想要的商品及交易條件' },
+  trade_step2_title: { ko: '공급사 탐색', zh: '供應商搜尋' },
+  trade_step2_desc: { ko: '한국 제조사/공급사를 탐색하고 최적의 거래처를 찾습니다', zh: '搜尋韓國製造商/供應商，找到最佳交易對象' },
+  trade_step3_title: { ko: '견적 및 계약', zh: '報價及合約' },
+  trade_step3_desc: { ko: '가격 협상 후 견적서 및 계약서를 제공합니다', zh: '價格協商後提供報價單及合約書' },
+  trade_step4_title: { ko: '생산 및 검수', zh: '生產及檢驗' },
+  trade_step4_desc: { ko: '제조 과정 모니터링 및 품질 검수를 진행합니다', zh: '監控製造過程並進行品質檢驗' },
+  trade_step5_title: { ko: '수출 및 배송', zh: '出口及配送' },
+  trade_step5_desc: { ko: '수출 서류 처리 및 국제 배송을 진행합니다', zh: '處理出口文件並安排國際配送' },
+
+  // ---- Shipping Process Steps ----
+  shipping_step2_title: { ko: '한국 창고로 발송', zh: '寄到韓國倉庫' },
+  shipping_step2_desc: { ko: '구매하신 상품을 한국 창고 주소로 보내주세요', zh: '請將您購買的商品寄到韓國倉庫地址' },
+
+  // ---- Pickup Process Steps ----
+  pickup_step1_desc: { ko: '픽업 장소, 상품 정보, 일정을 알려주세요', zh: '請告知提貨地點、商品資訊、行程時間' },
+  pickup_step2_title: { ko: '일정 확인', zh: '確認行程' },
+  pickup_step2_desc: { ko: '담당자가 일정을 확인하고 LINE으로 연락드립니다', zh: '負責人確認行程後透過LINE聯絡您' },
+  pickup_step3_title: { ko: '현지 픽업', zh: '現場提貨' },
+  pickup_step3_desc: { ko: '한국 현지에서 상품을 픽업합니다', zh: '在韓國當地為您提貨' },
+
   // ---- Trade Page ----
   trade_hero_title: { ko: '무역대행 서비스', zh: '貿易代購服務' },
   trade_hero_sub: { ko: 'B2B 전문 무역 및 대량 구매 지원', zh: 'B2B專業貿易及大量採購支援' },
@@ -204,13 +240,14 @@ const LANG_DATA = {
   tracking_subtitle: { ko: '운송장 번호를 입력하여 배송 상태를 확인하세요', zh: '輸入追蹤號碼查詢配送狀態' },
   tracking_placeholder: { ko: '운송장 번호 입력', zh: '輸入追蹤號碼' },
   tracking_btn: { ko: '조회', zh: '查詢' },
+  tracking_search_btn: { ko: '검색', zh: '搜尋' },
   tracking_carriers: { ko: '택배사 바로가기', zh: '快遞公司連結' },
   tracking_korea_post: { ko: '한국우체국', zh: '韓國郵政' },
 
   // ---- Advantages Section ----
   advantages_title: { ko: '우리를 선택하는 이유', zh: '為什麼選擇我們' },
-  adv1_title: { ko: '한국 현지 법인 운영', zh: '韓國現地法人運營' },
-  adv1_desc: { ko: '개인 대행이 아닌, 한국 현지 법인이 직접 운영하여 더욱 안심', zh: '非個人代購，韓國當地公司直營，更有保障' },
+  adv1_title: { ko: '한국과 대만에 현지 사무소 운영', zh: '韓國與台灣現地事務所運營' },
+  adv1_desc: { ko: '한국과 대만 모두 현지 사무소를 운영하여 더욱 빠르고 안심할 수 있는 서비스', zh: '韓國及台灣皆設有現地事務所，提供更即時、更有保障的服務' },
   adv2_title: { ko: '투명한 견적・숨겨진 비용 없음', zh: '透明報價・無隱藏費用' },
   adv2_desc: { ko: '상품 가격＋국제 운임＋서비스 수수료, 한눈에 확인', zh: '商品價格＋國際運費＋服務費，一目了然' },
   adv3_title: { ko: '다양한 서비스 원스톱 제공', zh: '多元服務一站搞定' },
@@ -259,7 +296,7 @@ const LANG_DATA = {
 };
 
 // Initialize language
-let currentLang = localStorage.getItem('site-language') || 'ko';
+let currentLang = localStorage.getItem('site-language') || 'zh';
 
 // Apply language to all elements with data-lang-key
 function applyLanguage() {
