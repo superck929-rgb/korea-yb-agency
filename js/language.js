@@ -57,7 +57,7 @@ const LANG_DATA = {
   card_more: { ko: '자세히 보기', zh: '了解更多' },
 
   // ---- Contact Section ----
-  contact_title: { ko: '연락처', zh: '聯絡我們' },
+  contact_title: { ko: '연락처', zh: '聯絡韓國YB오빠' },
   contact_address_label: { ko: '대만 사무실 주소', zh: '台灣辦公室地址' },
   contact_address: { ko: '대만 신베이시 린커우구', zh: '台灣新北市林口區' },
   contact_phone_label: { ko: '전화번호', zh: '電話號碼' },
@@ -245,7 +245,7 @@ const LANG_DATA = {
   tracking_korea_post: { ko: '한국우체국', zh: '韓國郵政' },
 
   // ---- Advantages Section ----
-  advantages_title: { ko: '우리를 선택하는 이유', zh: '為什麼選擇我們' },
+  advantages_title: { ko: '우리를 선택하는 이유', zh: '為什麼選擇韓國YB오빠[OBBA]' },
   adv1_title: { ko: '한국과 대만에 현지 사무소 운영', zh: '韓國與台灣現地事務所運營' },
   adv1_desc: { ko: '한국과 대만 모두 현지 사무소를 운영하여 더욱 빠르고 안심할 수 있는 서비스', zh: '韓國及台灣皆設有現地事務所，提供更即時、更有保障的服務' },
   adv2_title: { ko: '투명한 견적・숨겨진 비용 없음', zh: '透明報價・無隱藏費用' },
@@ -260,7 +260,7 @@ const LANG_DATA = {
   adv6_desc: { ko: '개인 및 기업 고객 모두 장기 거래 가능, 대량 주문 할인', zh: '個人及企業客戶皆可長期配合，量大另有優惠' },
 
   // ---- Business Area ----
-  business_title: { ko: '사업영역', zh: '業務範圍' },
+  business_title: { ko: '사업영역', zh: '韓國YB오빠業務範圍' },
   biz1_title: { ko: '구매대행', zh: '商品代購' },
   biz1_desc: { ko: '한국 쇼핑몰 상품 대리 구매 - 화장품, 의류, 식품 등', zh: '韓國網站商品代為購買，包括化妝品、服飾、食品等' },
   biz2_title: { ko: '배송대행', zh: '集運服務' },
